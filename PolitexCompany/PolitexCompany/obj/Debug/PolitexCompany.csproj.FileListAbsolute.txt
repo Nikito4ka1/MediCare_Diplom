@@ -1,0 +1,260 @@
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe.config
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.pdb
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.AssemblyReference.cache
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.SuggestedBindingRedirects.cache
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.g.cs
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\App.g.cs
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.cache
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.lref
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.baml
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.g.resources
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.Properties.Resources.resources
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.GenerateResource.cache
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CoreCompileInputs.cache
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.exe
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.pdb
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.dll
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.pdb
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CopyComplete
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\App.baml
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.dll
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.xml
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_Content.g.cs
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\ComingList.g.cs
+C:\Users\gusev\Desktop\PolitexCompany\PolitexCompany\obj\Debug\ComingList.baml
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe.config
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.pdb
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.dll
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.dll
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.dll
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.xml
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.xml
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.pdb
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\Курсовуха\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.AssemblyReference.cache
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.SuggestedBindingRedirects.cache
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\ComingList.g.cs
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.g.cs
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\App.g.cs
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_Content.g.cs
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.cache
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.lref
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\App.baml
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\ComingList.baml
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.baml
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.g.resources
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.Properties.Resources.resources
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.GenerateResource.cache
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CoreCompileInputs.cache
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CopyComplete
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.exe
+D:\Курсовуха\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.pdb
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.AssemblyReference.cache
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.SuggestedBindingRedirects.cache
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\ComingList.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\App.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_Content.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.cache
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.lref
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.exe
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.pdb
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe.config
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.pdb
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.dll
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.dll
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.xml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.pdb
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\App.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\ComingList.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.g.resources
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.Properties.Resources.resources
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.GenerateResource.cache
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CoreCompileInputs.cache
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CopyComplete
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\ItemsPage.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\Orders.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\OrderPage.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\ItemsPage.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\Orders.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\OrderPage.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\OrderAddPage.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\OrderEditPage.g.cs
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\OrderAddPage.baml
+C:\Users\gusev\Desktop\Курсач\PolitexCompany\PolitexCompany\obj\Debug\OrderEditPage.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe.config
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.pdb
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.dll
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.dll
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.dll
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.dll
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.dll
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.xml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.xml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.pdb
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.pdb
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.xml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.xml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.AssemblyReference.cache
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\ComingList.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\ItemsPage.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\OrderAddPage.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\OrderEditPage.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\OrderPage.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\Orders.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\App.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_Content.g.cs
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.cache
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.lref
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\App.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\ComingList.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\ItemsPage.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\OrderAddPage.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\OrderEditPage.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\OrderPage.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\Orders.baml
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.g.resources
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.Properties.Resources.resources
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.GenerateResource.cache
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CoreCompileInputs.cache
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexC.0B797B2F.Up2Date
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.exe
+F:\КУРСОВИК\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.pdb
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.AssemblyReference.cache
+E:\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\MedWindow.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\App.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_Content.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.cache
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.lref
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.exe
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.pdb
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\ClientPage.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\AddClientPage.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\AddContractPage.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\ContractPage.g.cs
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\RedactPage.g.cs
+E:\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe.config
+E:\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe
+E:\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.pdb
+E:\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.dll
+E:\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.dll
+E:\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.dll
+E:\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.dll
+E:\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.xml
+E:\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.xml
+E:\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.pdb
+E:\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+E:\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.xml
+E:\PolitexCompany\PolitexCompany\obj\Debug\App.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\ClientPage.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\MedWindow.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\AddClientPage.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\AddContractPage.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\ContractPage.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\Page\RedactPage.baml
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.g.resources
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.Properties.Resources.resources
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.GenerateResource.cache
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CoreCompileInputs.cache
+E:\PolitexCompany\PolitexCompany\obj\Debug\PolitexC.0B797B2F.Up2Date
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe.config
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.exe
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\PolitexCompany.pdb
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignColors.pdb
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.AssemblyReference.cache
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\AddClientPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\AddContractPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\ClientPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\MedWindow.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\ContractPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\RedactPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\App.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_Content.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.cache
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany_MarkupCompile.lref
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\App.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\AddClientPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\AddContractPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\ClientPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\MainWindow.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\MedWindow.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\ContractPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\RedactPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.g.resources
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.Properties.Resources.resources
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.GenerateResource.cache
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.csproj.CoreCompileInputs.cache
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexC.0B797B2F.Up2Date
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.exe
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\PolitexCompany.pdb
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\DescriptionPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\DescriptionPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\GraphPage.g.cs
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\OpenTK.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\ScottPlot.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\ScottPlot.WPF.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Buffers.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Drawing.Common.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Memory.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.ValueTuple.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\OpenTK.pdb
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\OpenTK.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\ScottPlot.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Buffers.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Memory.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\System.ValueTuple.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\Page\GraphPage.baml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\itextsharp.dll
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\bin\Debug\itextsharp.xml
+C:\Users\gusev\OneDrive\Рабочий стол\PolitexCompany\PolitexCompany\obj\Debug\GeneratedInternalTypeHelper.g.cs

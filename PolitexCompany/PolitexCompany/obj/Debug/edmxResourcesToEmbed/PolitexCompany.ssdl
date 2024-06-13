@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище PolitexCompanyModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Coming">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="IdSupplier" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="IdManager" Type="int" Nullable="false" />
+    <Property Name="IdIncomingMaterial" Type="int" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" />
+    <Property Name="NameMaterial" Type="nvarchar" MaxLength="50" />
+    <Property Name="QuantityMaterial" Type="nvarchar" MaxLength="50" />
+    <Property Name="PriceAll" Type="int" />
+  </EntityType>
+  <EntityType Name="IncomingMaterials">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuantityMaterial" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="IdMaterial" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Manager">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameManager" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameMaterial" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MaterialWarehouse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="IdMaterial" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Storekeeper">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameStorekeeper" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NameSuppliers" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Warehouse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="IdMateialWarehouse" Type="int" Nullable="false" />
+    <Property Name="IdEmployee" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Coming_IncomingMaterials1">
+    <End Role="IncomingMaterials" Type="Self.IncomingMaterials" Multiplicity="1" />
+    <End Role="Coming" Type="Self.Coming" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IncomingMaterials">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Coming">
+        <PropertyRef Name="IdIncomingMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coming_Manager">
+    <End Role="Manager" Type="Self.Manager" Multiplicity="1" />
+    <End Role="Coming" Type="Self.Coming" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manager">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Coming">
+        <PropertyRef Name="IdManager" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Coming_Suppliers">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="Coming" Type="Self.Coming" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Coming">
+        <PropertyRef Name="IdSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IncomingMaterials_Material">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="IncomingMaterials" Type="Self.IncomingMaterials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="IncomingMaterials">
+        <PropertyRef Name="IdMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MaterialWarehouse_Material">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="MaterialWarehouse" Type="Self.MaterialWarehouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MaterialWarehouse">
+        <PropertyRef Name="IdMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Warehouse_Manager">
+    <End Role="Manager" Type="Self.Manager" Multiplicity="1" />
+    <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manager">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Warehouse">
+        <PropertyRef Name="IdEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Warehouse_MaterialWarehouse">
+    <End Role="MaterialWarehouse" Type="Self.MaterialWarehouse" Multiplicity="1" />
+    <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaterialWarehouse">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Warehouse">
+        <PropertyRef Name="IdMateialWarehouse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Warehouse_Storekeeper">
+    <End Role="Storekeeper" Type="Self.Storekeeper" Multiplicity="1" />
+    <End Role="Warehouse" Type="Self.Warehouse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Storekeeper">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Warehouse">
+        <PropertyRef Name="IdEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище PolitexCompanyModelContainer">
+    <EntitySet Name="Coming" EntityType="Self.Coming" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IncomingMaterials" EntityType="Self.IncomingMaterials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manager" EntityType="Self.Manager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MaterialWarehouse" EntityType="Self.MaterialWarehouse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Storekeeper" EntityType="Self.Storekeeper" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Suppliers" EntityType="Self.Suppliers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Warehouse" EntityType="Self.Warehouse" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Coming_IncomingMaterials1" Association="Self.FK_Coming_IncomingMaterials1">
+      <End Role="IncomingMaterials" EntitySet="IncomingMaterials" />
+      <End Role="Coming" EntitySet="Coming" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coming_Manager" Association="Self.FK_Coming_Manager">
+      <End Role="Manager" EntitySet="Manager" />
+      <End Role="Coming" EntitySet="Coming" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Coming_Suppliers" Association="Self.FK_Coming_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Coming" EntitySet="Coming" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IncomingMaterials_Material" Association="Self.FK_IncomingMaterials_Material">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="IncomingMaterials" EntitySet="IncomingMaterials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MaterialWarehouse_Material" Association="Self.FK_MaterialWarehouse_Material">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="MaterialWarehouse" EntitySet="MaterialWarehouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Warehouse_Manager" Association="Self.FK_Warehouse_Manager">
+      <End Role="Manager" EntitySet="Manager" />
+      <End Role="Warehouse" EntitySet="Warehouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Warehouse_MaterialWarehouse" Association="Self.FK_Warehouse_MaterialWarehouse">
+      <End Role="MaterialWarehouse" EntitySet="MaterialWarehouse" />
+      <End Role="Warehouse" EntitySet="Warehouse" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Warehouse_Storekeeper" Association="Self.FK_Warehouse_Storekeeper">
+      <End Role="Storekeeper" EntitySet="Storekeeper" />
+      <End Role="Warehouse" EntitySet="Warehouse" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

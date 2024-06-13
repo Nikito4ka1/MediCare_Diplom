@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PolitexCompanyModelContainer" CdmEntityContainer="PolitexCompanyEntities">
+    <EntitySetMapping Name="Coming">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.Coming">
+        <MappingFragment StoreEntitySet="Coming">
+          <ScalarProperty Name="PriceAll" ColumnName="PriceAll" />
+          <ScalarProperty Name="QuantityMaterial" ColumnName="QuantityMaterial" />
+          <ScalarProperty Name="NameMaterial" ColumnName="NameMaterial" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IdSupplier" ColumnName="IdSupplier" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdManager" ColumnName="IdManager" />
+          <ScalarProperty Name="IdIncomingMaterial" ColumnName="IdIncomingMaterial" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IncomingMaterials">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.IncomingMaterials">
+        <MappingFragment StoreEntitySet="IncomingMaterials">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QuantityMaterial" ColumnName="QuantityMaterial" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="IdMaterial" ColumnName="IdMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manager">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameManager" ColumnName="NameManager" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameMaterial" ColumnName="NameMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialWarehouse">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.MaterialWarehouse">
+        <MappingFragment StoreEntitySet="MaterialWarehouse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="IdMaterial" ColumnName="IdMaterial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Storekeeper">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.Storekeeper">
+        <MappingFragment StoreEntitySet="Storekeeper">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="NameStorekeeper" ColumnName="NameStorekeeper" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.Suppliers">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameSuppliers" ColumnName="NameSuppliers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warehouse">
+      <EntityTypeMapping TypeName="PolitexCompanyModel.Warehouse">
+        <MappingFragment StoreEntitySet="Warehouse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdMateialWarehouse" ColumnName="IdMateialWarehouse" />
+          <ScalarProperty Name="IdEmployee" ColumnName="IdEmployee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CommingDoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NumberDoc" Type="Int32" Nullable="false" />
+    <Property Name="IdSuppulier" Type="Int32" Nullable="false" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="Cost" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_CommingDoc_User" FromRole="CommingDoc" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CostComming">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdDocument" Type="Int32" Nullable="false" />
+    <Property Name="IdItem" Type="Int32" Nullable="false" />
+    <Property Name="Quanity" Type="Int32" Nullable="false" />
+    <Property Name="CommingCost" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="Self.FK_CostComming_Item" FromRole="CostComming" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Unit" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Multiplicity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Fabricator" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CostComming" Relationship="Self.FK_CostComming_Item" FromRole="Item" ToRole="CostComming" />
+    <NavigationProperty Name="Leftovers" Relationship="Self.FK_Leftovers_Item" FromRole="Item" ToRole="Leftovers" />
+    <NavigationProperty Name="Ordered" Relationship="Self.FK_Ordered_Item" FromRole="Item" ToRole="Ordered" />
+  </EntityType>
+  <EntityType Name="Leftovers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdItem" Type="Int32" Nullable="false" />
+    <Property Name="Quanity" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TypeOperation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="Self.FK_Leftovers_Item" FromRole="Leftovers" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="OffItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumberDoc" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="IdUserBoss" Type="Int32" Nullable="false" />
+    <Property Name="IdItem" Type="Int32" Nullable="false" />
+    <Property Name="Quanity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_OffItems_User" FromRole="OffItems" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="Self.FK_OffItems_User1" FromRole="OffItems" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateOrder" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="OrderStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdSupplier" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Order_User" FromRole="Order" ToRole="User" />
+    <NavigationProperty Name="Ordered" Relationship="Self.FK_Ordered_Order" FromRole="Order" ToRole="Ordered" />
+  </EntityType>
+  <EntityType Name="Ordered">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdOrder" Type="Int32" Nullable="false" />
+    <Property Name="IdItem" Type="Int32" Nullable="false" />
+    <Property Name="Quanity" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="Self.FK_Ordered_Item" FromRole="Ordered" ToRole="Item" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Ordered_Order" FromRole="Ordered" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CommingDoc" Relationship="Self.FK_CommingDoc_User" FromRole="User" ToRole="CommingDoc" />
+    <NavigationProperty Name="OffItems" Relationship="Self.FK_OffItems_User" FromRole="User" ToRole="OffItems" />
+    <NavigationProperty Name="OffItems1" Relationship="Self.FK_OffItems_User1" FromRole="User" ToRole="OffItems" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_User" FromRole="User" ToRole="Order" />
+  </EntityType>
+  <Association Name="FK_CommingDoc_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="CommingDoc" Type="Self.CommingDoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CommingDoc">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CostComming_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="CostComming" Type="Self.CostComming" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CostComming">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Leftovers_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="Leftovers" Type="Self.Leftovers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Leftovers">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ordered_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="Ordered" Type="Self.Ordered" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ordered">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OffItems_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="OffItems" Type="Self.OffItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OffItems">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OffItems_User1">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="OffItems" Type="Self.OffItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OffItems">
+        <PropertyRef Name="IdUserBoss" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ordered_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="Ordered" Type="Self.Ordered" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ordered">
+        <PropertyRef Name="IdOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Willy_WonkaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CommingDoc" EntityType="Self.CommingDoc" />
+    <EntitySet Name="CostComming" EntityType="Self.CostComming" />
+    <EntitySet Name="Item" EntityType="Self.Item" />
+    <EntitySet Name="Leftovers" EntityType="Self.Leftovers" />
+    <EntitySet Name="OffItems" EntityType="Self.OffItems" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="Ordered" EntityType="Self.Ordered" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK_CommingDoc_User" Association="Self.FK_CommingDoc_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="CommingDoc" EntitySet="CommingDoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CostComming_Item" Association="Self.FK_CostComming_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="CostComming" EntitySet="CostComming" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Leftovers_Item" Association="Self.FK_Leftovers_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Leftovers" EntitySet="Leftovers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ordered_Item" Association="Self.FK_Ordered_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Ordered" EntitySet="Ordered" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OffItems_User" Association="Self.FK_OffItems_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="OffItems" EntitySet="OffItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OffItems_User1" Association="Self.FK_OffItems_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="OffItems" EntitySet="OffItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ordered_Order" Association="Self.FK_Ordered_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Ordered" EntitySet="Ordered" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

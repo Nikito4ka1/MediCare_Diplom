@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WarehouseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="unit" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ItemLeft" Relationship="Self.FK_ItemLeft_Item" FromRole="Item" ToRole="ItemLeft" />
+    <NavigationProperty Name="ItemOrder" Relationship="Self.FK_ItemOrder_Item" FromRole="Item" ToRole="ItemOrder" />
+  </EntityType>
+  <EntityType Name="ItemLeft">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idItem" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Item" Relationship="Self.FK_ItemLeft_Item" FromRole="ItemLeft" ToRole="Item" />
+  </EntityType>
+  <EntityType Name="ItemOrder">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idOrder" Type="Int32" Nullable="false" />
+    <Property Name="idItem" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" />
+    <NavigationProperty Name="Item" Relationship="Self.FK_ItemOrder_Item" FromRole="ItemOrder" ToRole="Item" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_ItemOrder_Order" FromRole="ItemOrder" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUser" Type="Int32" Nullable="false" />
+    <Property Name="idUserApply" Type="Int32" />
+    <Property Name="idSupplier" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dateOrder" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="ItemOrder" Relationship="Self.FK_ItemOrder_Order" FromRole="Order" ToRole="ItemOrder" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_Order_Supplier" FromRole="Order" ToRole="Supplier" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Order_User" FromRole="Order" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_Supplier" FromRole="Supplier" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Order_User" FromRole="User" ToRole="Order" />
+  </EntityType>
+  <Association Name="FK_ItemLeft_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="ItemLeft" Type="Self.ItemLeft" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ItemLeft">
+        <PropertyRef Name="idItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOrder_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="ItemOrder" Type="Self.ItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ItemOrder">
+        <PropertyRef Name="idItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ItemOrder_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="ItemOrder" Type="Self.ItemOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ItemOrder">
+        <PropertyRef Name="idOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="idSupplier" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WarehouseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Item" EntityType="Self.Item" />
+    <EntitySet Name="ItemLeft" EntityType="Self.ItemLeft" />
+    <EntitySet Name="ItemOrder" EntityType="Self.ItemOrder" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK_ItemLeft_Item" Association="Self.FK_ItemLeft_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="ItemLeft" EntitySet="ItemLeft" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOrder_Item" Association="Self.FK_ItemOrder_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="ItemOrder" EntitySet="ItemOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ItemOrder_Order" Association="Self.FK_ItemOrder_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="ItemOrder" EntitySet="ItemOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Supplier" Association="Self.FK_Order_Supplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

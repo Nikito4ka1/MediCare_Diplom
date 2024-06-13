@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="36de8c95aa4f44d4bf73b60cb83e7cc1" Name="Diagram1">
+        <EntityTypeShape EntityType="PolitexCompanyModel.Coming" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.IncomingMaterials" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.Manager" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.Material" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.MaterialWarehouse" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.Storekeeper" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.Suppliers" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PolitexCompanyModel.Warehouse" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_Coming_IncomingMaterials1" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_Coming_Manager" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_Coming_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_IncomingMaterials_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_Warehouse_Manager" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_MaterialWarehouse_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_Warehouse_MaterialWarehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="PolitexCompanyModel.FK_Warehouse_Storekeeper" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

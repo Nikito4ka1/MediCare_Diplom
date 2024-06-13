@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CommingDoc">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="NumberDoc" Type="int" Nullable="false" />
+    <Property Name="IdSuppulier" Type="int" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="Cost" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CostComming">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDocument" Type="int" Nullable="false" />
+    <Property Name="IdItem" Type="int" Nullable="false" />
+    <Property Name="Quanity" Type="int" Nullable="false" />
+    <Property Name="CommingCost" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Multiplicity" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Fabricator" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Leftovers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdItem" Type="int" Nullable="false" />
+    <Property Name="Quanity" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="TypeOperation" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OffItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumberDoc" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="IdUserBoss" Type="int" Nullable="false" />
+    <Property Name="IdItem" Type="int" Nullable="false" />
+    <Property Name="Quanity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateOrder" Type="date" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="OrderStatus" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdSupplier" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ordered">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdOrder" Type="int" Nullable="false" />
+    <Property Name="IdItem" Type="int" Nullable="false" />
+    <Property Name="Quanity" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CommingDoc_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="CommingDoc" Type="Self.CommingDoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CommingDoc">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CostComming_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="CostComming" Type="Self.CostComming" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CostComming">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Leftovers_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="Leftovers" Type="Self.Leftovers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Leftovers">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OffItems_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="OffItems" Type="Self.OffItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OffItems">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OffItems_User1">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="OffItems" Type="Self.OffItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OffItems">
+        <PropertyRef Name="IdUserBoss" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ordered_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="Ordered" Type="Self.Ordered" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ordered">
+        <PropertyRef Name="IdItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ordered_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="Ordered" Type="Self.Ordered" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ordered">
+        <PropertyRef Name="IdOrder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ModelContainer">
+    <EntitySet Name="CommingDoc" EntityType="Self.CommingDoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CostComming" EntityType="Self.CostComming" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Item" EntityType="Self.Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Leftovers" EntityType="Self.Leftovers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OffItems" EntityType="Self.OffItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ordered" EntityType="Self.Ordered" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CommingDoc_User" Association="Self.FK_CommingDoc_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="CommingDoc" EntitySet="CommingDoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CostComming_Item" Association="Self.FK_CostComming_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="CostComming" EntitySet="CostComming" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Leftovers_Item" Association="Self.FK_Leftovers_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Leftovers" EntitySet="Leftovers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OffItems_User" Association="Self.FK_OffItems_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="OffItems" EntitySet="OffItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OffItems_User1" Association="Self.FK_OffItems_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="OffItems" EntitySet="OffItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ordered_Item" Association="Self.FK_Ordered_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Ordered" EntitySet="Ordered" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ordered_Order" Association="Self.FK_Ordered_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Ordered" EntitySet="Ordered" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

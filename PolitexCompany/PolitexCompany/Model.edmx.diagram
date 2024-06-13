@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf202c2df3744c39bbcea226e77665bb" Name="Diagram1">
+        <EntityTypeShape EntityType="MediCarePlusModel.Category_insurance" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediCarePlusModel.Clients" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediCarePlusModel.Contracts" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediCarePlusModel.Medical_insurance" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MediCarePlusModel.Users" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MediCarePlusModel.FK_Medical_insurance_Category_insurance" ManuallyRouted="false" />
+        <AssociationConnector Association="MediCarePlusModel.FK_Contracts_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="MediCarePlusModel.FK_Contracts_Medical_insurance" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MediCarePlusModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

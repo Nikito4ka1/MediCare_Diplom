@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MediCarePlusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Category_insurance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Medical_insurance" Relationship="Self.FK_Medical_insurance_Category_insurance" FromRole="Category_insurance" ToRole="Medical_insurance" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone" Type="Int32" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Contracts" Relationship="Self.FK_Contracts_Clients" FromRole="Clients" ToRole="Contracts" />
+  </EntityType>
+  <EntityType Name="Contracts">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="client_id" Type="Int32" Nullable="false" />
+    <Property Name="medical_insurance_id" Type="Int32" Nullable="false" />
+    <Property Name="date_start" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="date_end" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Clients" Relationship="Self.FK_Contracts_Clients" FromRole="Contracts" ToRole="Clients" />
+    <NavigationProperty Name="Medical_insurance" Relationship="Self.FK_Contracts_Medical_insurance" FromRole="Contracts" ToRole="Medical_insurance" />
+  </EntityType>
+  <EntityType Name="Medical_insurance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="category_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category_insurance" Relationship="Self.FK_Medical_insurance_Category_insurance" FromRole="Medical_insurance" ToRole="Category_insurance" />
+    <NavigationProperty Name="Contracts" Relationship="Self.FK_Contracts_Medical_insurance" FromRole="Medical_insurance" ToRole="Contracts" />
+  </EntityType>
+  <EntityType Name="Profit">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="summa" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Medical_insurance_Category_insurance">
+    <End Role="Category_insurance" Type="Self.Category_insurance" Multiplicity="1" />
+    <End Role="Medical_insurance" Type="Self.Medical_insurance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category_insurance">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Medical_insurance">
+        <PropertyRef Name="category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contracts_Clients">
+    <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+    <End Role="Contracts" Type="Self.Contracts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contracts">
+        <PropertyRef Name="client_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contracts_Medical_insurance">
+    <End Role="Medical_insurance" Type="Self.Medical_insurance" Multiplicity="1" />
+    <End Role="Contracts" Type="Self.Contracts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medical_insurance">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contracts">
+        <PropertyRef Name="medical_insurance_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MediCarePlusEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Category_insurance" EntityType="Self.Category_insurance" />
+    <EntitySet Name="Clients" EntityType="Self.Clients" />
+    <EntitySet Name="Contracts" EntityType="Self.Contracts" />
+    <EntitySet Name="Medical_insurance" EntityType="Self.Medical_insurance" />
+    <EntitySet Name="Profit" EntityType="Self.Profit" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_Medical_insurance_Category_insurance" Association="Self.FK_Medical_insurance_Category_insurance">
+      <End Role="Category_insurance" EntitySet="Category_insurance" />
+      <End Role="Medical_insurance" EntitySet="Medical_insurance" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contracts_Clients" Association="Self.FK_Contracts_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Contracts" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contracts_Medical_insurance" Association="Self.FK_Contracts_Medical_insurance">
+      <End Role="Medical_insurance" EntitySet="Medical_insurance" />
+      <End Role="Contracts" EntitySet="Contracts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
